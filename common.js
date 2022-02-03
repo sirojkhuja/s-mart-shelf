@@ -94,6 +94,7 @@ if (container) {
             coverBlock.firstElementChild.style.transform = "translateY(-80px)";
             shortSummary.style.marginTop = "0";
             topSpace.style.height = "0";
+            topBlock.style.borderBottom = "0";
         }
     })
 }
