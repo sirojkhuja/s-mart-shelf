@@ -46,9 +46,54 @@ if (ctx) {
             }]
         },
         options: {
-            //cutoutPercentage: 40,
             responsive: false,
-
         }
     });
+}
+
+const container = document.querySelector(".container.book-page");
+if (container) {
+    let coverBlock = container.querySelector(".full-cover");
+    let rightBlock = container.querySelector(".book-right-block");
+    let topBlock = container.querySelector(".book-top-block");
+    const bottomBlock = container.querySelector(".main .book-bottom-block");
+    const shortSummary = container.querySelector(".short-summary");
+    const topSpace = bottomBlock.querySelector(".top-space");
+    container.addEventListener("scroll", e => {
+        if (e.target.scrollTop > 20) {
+            container.firstElementChild.className = "";
+            coverBlock.style.gridArea = "1 / 1 / -1 / 1";
+            rightBlock.style.gridArea = "1 / 2 / -1 / 2";
+            topBlock.style.height = "27vh";
+            topBlock.style.borderBottom = "2px solid #ffffff";
+            topBlock.style.position = "fixed";
+            topBlock.style.top = "5.5vh";
+            rightBlock.style.fontSize = "1.5rem";
+            coverBlock.style.borderRadius = "10px";
+            topBlock.style.padding = "1.5rem";
+            topBlock.style.paddingBottom = "1.6rem";
+            topBlock.style.gap = "1rem";
+            rightBlock.style.padding = "0";
+            rightBlock.style.textAlign = "left";
+            coverBlock.firstElementChild.style.transform = "translateY(0)";
+            shortSummary.style.marginTop = "50vh";
+            topSpace.style.height = "105px";
+        } else {
+            container.firstElementChild.className = "transparent";
+            coverBlock.style.gridArea = "1 / 1 / 2 / -1";
+            rightBlock.style.gridArea = "2 / 1 / -1 / -1";
+            topBlock.style.height = "75vh";
+            topBlock.style.position = "relative";
+            topBlock.style.top = "0";
+            rightBlock.style.fontSize = "2rem";
+            coverBlock.style.borderRadius = "0px 0px 30px 30px";
+            topBlock.style.padding = "0";
+            topBlock.style.gap = "0";
+            rightBlock.style.padding = "1.5rem";
+            rightBlock.style.textAlign = "center";
+            coverBlock.firstElementChild.style.transform = "translateY(-80px)";
+            shortSummary.style.marginTop = "0";
+            topSpace.style.height = "0";
+        }
+    })
 }

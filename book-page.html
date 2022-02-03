@@ -12,7 +12,7 @@
 </head>
 
 <body>
-    <div class="container" id="root">
+    <div class="container book-page" id="root">
         <header class="transparent">
             <div class="logo-block" onclick="redirectTo('index')">
                 <img src="logo.png" alt="Logo">
@@ -25,35 +25,41 @@
         </header>
 
         <main class="main">
-            <section class="full-cover">
-                <img src="book1.jpg" alt="Sariq Devni Minib">
-            </section>
+            <section class="book-top-block">
+                <section class="full-cover">
+                    <img src="book1.jpg" alt="Sariq Devni Minib">
+                </section>
 
-            <section class="book-description-block">
-                <div class="book-title">Discovering Myself</div>
-                <div class="release-date">2 Feb 2022</div>
-                <div class="rating">
-                    <i class="fa fa-star full"></i>
-                    <i class="fa fa-star full"></i>
-                    <i class="fa fa-star full"></i>
-                    <i class="fa fa-star full"></i>
-                    <i class="fa fa-star full"></i>
-                    <span class="rating-point">4.8/5.0</span>
-                </div>
-                <div class="reaction-block">
-                    <i class="fa fa-share-alt"></i>
-                    <i class="fa fa-bookmark" onclick="clicked(this)"></i>
-                    <i class="fa fa-heart" onclick="clicked(this)"></i>
-                </div>
-                <div class="description-footer-block buttons">
-                    <button class="btn btn-secondary">Description</button>
-                    <button class="btn btn-secondary">Reviews</button>
-                </div>
+                <section class="book-right-block">
+                    <div class="book-title">Discovering Myself</div>
+                    <div class="release-date">2 Feb 2022</div>
+                    <div class="rating">
+                        <i class="fa fa-star full"></i>
+                        <i class="fa fa-star full"></i>
+                        <i class="fa fa-star full"></i>
+                        <i class="fa fa-star full"></i>
+                        <i class="fa fa-star full"></i>
+                        <span class="rating-point">4.8/5.0</span>
+                    </div>
+                    <div class="reaction-block">
+                        <i class="fa fa-share-alt"></i>
+                        <i class="fa fa-bookmark" onclick="clicked(this)"></i>
+                        <i class="fa fa-heart" onclick="clicked(this)"></i>
+                    </div>
+                </section>
             </section>
+            <section class="book-bottom-block">
+                <div class="top-space"></div>
+                <div class="short-summary">
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab debitis earum neque, commodi, nesciunt dolore dignissimos nam assumenda architecto placeat culpa consequatur harum veritatis in officia accusantium maiores voluptatum tempore laudantium veniam
+                    non recusandae ea iste voluptatem! Inventore, quos officiis.
+                </div>
+                <div class="more-space"></div>
 
-            <section class="book-action-block buttons">
-                <button class="btn btn-primary">Add To Collection</button>
-                <button class="btn btn-primary">Start Reading Now</button>
+                <section class="book-action-block buttons">
+                    <button class="btn btn-primary">Add To Collection</button>
+                    <button class="btn btn-primary">Start Reading Now</button>
+                </section>
             </section>
         </main>
 
