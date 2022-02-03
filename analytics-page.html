@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>S - Mart | Shelf</title>
+</head>
+
+<body>
+    <div class="container" id="root">
+        <header>
+            <div class="logo-block" onclick="redirectTo('index')">
+                <img src="logo.png" alt="Logo">
+                <span class="title">S - Mart | Shelf</span>
+            </div>
+            <div class="account-block" onclick="redirectTo('analytics-page')">
+                <img src="avatar.jpg" alt="Avatar">
+                <span class="welcome-text">Hi, Friend</span>
+            </div>
+        </header>
+        <main class="with-padding">
+            <div class="main-title">Analytics</div>
+            <div class="performance-block">
+                <div class="text-block">
+                    <span>Performance</span>
+                    <span>Sort By: Hours</span>
+                </div>
+                <div class="index-block">
+                    <div class="index-item all">
+                        <div class="top-circle"></div>
+                        <span class="title">All</span>
+                        <span class="number">158</span>
+                        <div class="percentage">
+                            48% <i class="fa fa-arrow-up"></i>
+                        </div>
+                        <div class="bottom-circle"></div>
+                    </div>
+                    <div class="index-item today">
+                        <div class="top-circle"></div>
+                        <span class="title">Today</span>
+                        <span class="number">158</span>
+                        <div class="percentage">
+                            48% <i class="fa fa-arrow-up"></i>
+                        </div>
+                        <div class="bottom-circle"></div>
+                    </div>
+                    <div class="index-item this-week">
+                        <div class="top-circle"></div>
+                        <span class="title">This Week</span>
+                        <span class="number">158</span>
+                        <div class="percentage">
+                            48% <i class="fa fa-arrow-up"></i>
+                        </div>
+                        <div class="bottom-circle"></div>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="category-stats-block">
+                <div class="text-block">
+                    <span>Categories</span>
+                    <span>Today</span>
+                </div>
+                <div class="graph-block">
+                    <div class="colors">
+                        <div class="color-item">
+                            <div class="square color1">18%</div>
+                            <div class="span">Critical Thinking</div>
+                        </div>
+                        <div class="color-item">
+                            <div class="square color2">10%</div>
+                            <div class="span">Math</div>
+                        </div>
+                        <div class="color-item">
+                            <div class="square color3">26%</div>
+                            <div class="span">Fiction</div>
+                        </div>
+                        <div class="color-item">
+                            <div class="square color4">18%</div>
+                            <div class="span">Factual</div>
+                        </div>
+                        <div class="color-item">
+                            <div class="square color5">21%</div>
+                            <div class="span">Science</div>
+                        </div>
+                        <div class="color-item">
+                            <div class="square color6">7%</div>
+                            <div class="span">Literature</div>
+                        </div>
+                    </div>
+                    <div class="chart">
+                        <div class="pie-chart"></div>
+                        <div class="pie-chart-inner-circle"></div>
+                        <canvas id="doughnut-chart" width="180" height="180"></canvas>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="skills-block">
+                <div class="text-block">
+                    <span>Skills</span>
+                    <span>Today</span>
+                </div>
+                <div class="line-graphs-block">
+                    <div class="line-graph-item">
+                        <div class="line color1"></div>
+                        <div class="title">Math</div>
+                    </div>
+                    <div class="line-graph-item">
+                        <div class="line color2"></div>
+                        <div class="title">Critical Thinking</div>
+                    </div>
+                    <div class="line-graph-item">
+                        <div class="line color3"></div>
+                        <div class="title">Fiction</div>
+                    </div>
+                    <div class="line-graph-item">
+                        <div class="line color4"></div>
+                        <div class="title">Factual</div>
+                    </div>
+                    <div class="line-graph-item">
+                        <div class="line color5"></div>
+                        <div class="title">Science</div>
+                    </div>
+                    <div class="line-graph-item">
+                        <div class="line color6"></div>
+                        <div class="title">Literature</div>
+                    </div>
+                </div>
+            </div>
+        </main>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="common.js"></script>
+</body>
+
+</html>

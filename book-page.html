@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" integrity="sha512-SfTiTlX6kk+qitfevl/7LibUOeJWlt9rbyDn92a1DqWOw9vWG2MFoays0sgObmWazO5BQPiFucnnEAjpAB+/Sw==" crossorigin="anonymous" referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="style.css">
+    <title>S - Mart | Shelf</title>
+</head>
+
+<body>
+    <div class="container" id="root">
+        <header class="transparent">
+            <div class="logo-block" onclick="redirectTo('index')">
+                <img src="logo.png" alt="Logo">
+                <span class="title">S - Mart | Shelf</span>
+            </div>
+            <div class="account-block" onclick="redirectTo('analytics-page')">
+                <img src="avatar.jpg" alt="Avatar">
+                <span class="welcome-text">Hi, Friend</span>
+            </div>
+        </header>
+
+        <main class="main">
+            <section class="full-cover">
+                <img src="book1.jpg" alt="Sariq Devni Minib">
+            </section>
+
+            <section class="book-description-block">
+                <div class="book-title">Discovering Myself</div>
+                <div class="release-date">2 Feb 2022</div>
+                <div class="rating">
+                    <i class="fa fa-star full"></i>
+                    <i class="fa fa-star full"></i>
+                    <i class="fa fa-star full"></i>
+                    <i class="fa fa-star full"></i>
+                    <i class="fa fa-star full"></i>
+                    <span class="rating-point">4.8/5.0</span>
+                </div>
+                <div class="reaction-block">
+                    <i class="fa fa-share-alt"></i>
+                    <i class="fa fa-bookmark" onclick="clicked(this)"></i>
+                    <i class="fa fa-heart" onclick="clicked(this)"></i>
+                </div>
+                <div class="description-footer-block buttons">
+                    <button class="btn btn-secondary">Description</button>
+                    <button class="btn btn-secondary">Reviews</button>
+                </div>
+            </section>
+
+            <section class="book-action-block buttons">
+                <button class="btn btn-primary">Add To Collection</button>
+                <button class="btn btn-primary">Start Reading Now</button>
+            </section>
+        </main>
+
+        <script src="common.js"></script>
+</body>
+
+</html>
