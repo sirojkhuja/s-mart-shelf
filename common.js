@@ -96,7 +96,7 @@ if (container) {
             topBlock.style.gap = "1rem";
 
             shortSummary.style.marginTop = "50vh";
-            shortSummary.firstElementChild.innerHTML = "Short Summary";
+            shortSummary.firstElementChild.innerHTML = "Краткое содержание";
 
 
             topSpace.style.height = "105px";

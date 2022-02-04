@@ -772,6 +772,10 @@ main.with-padding .skills-block .line-graphs-block .line-graph-item {
     justify-content: space-between;
 }
 
+main.with-padding .skills-block .line-graphs-block .line-graph-item .title {
+    text-align: right;
+}
+
 main.with-padding .skills-block .line-graphs-block .line-graph-item .line {
     height: 6px;
     border-radius: 25px;
