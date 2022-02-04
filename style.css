@@ -74,10 +74,14 @@ header .account-block {
     padding-right: 1.7rem;
 }
 
+header .account-block i {
+    font-size: 1.3rem;
+}
+
 header .account-block img {
-    border-radius: 50%;
+    /* border-radius: 50%; */
     width: 20px;
-    border: 2px solid #fff;
+    /* border: 2px solid #fff; */
 }
 
 header .account-block .welcome-text {
